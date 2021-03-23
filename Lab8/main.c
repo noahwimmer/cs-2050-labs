@@ -14,5 +14,7 @@ int main() {
     removeEq(5, list);
     printList(list);
 
+    freeList(list);
+
     return 0;
 }

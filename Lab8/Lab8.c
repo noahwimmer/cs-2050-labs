@@ -26,12 +26,12 @@ List* initList() {
     return list;
 }
 
-int getSize(List *list) {
+int getSize(List* list) {
     return list->size;
 }
 
 // this function returns the node at the given index in a list.
-void* getAtIndex(List *list, int index) {
+void* getAtIndex(List* list, int index) {
     if(getSize(list) > 0) {
         //has at least one node
         Node* temp = list->head;
@@ -45,7 +45,7 @@ void* getAtIndex(List *list, int index) {
     }
 }
 
-void freeList(List *list) {
+void freeList(List* list) {
     while(getSize(list) > 0) {
         //free each node
         int i;
@@ -75,11 +75,11 @@ int insertInOrder(void* o, List* list) {
             insertAtHead(list, o);
             printList(list);
         }
-        // list does not contain the object
-        // bubble up to the position that it needs to insert at.
-        // insert there
+            // list does not contain the object
+            // bubble up to the position that it needs to insert at.
+            // insert there
 
-        // if size is 1
+            // if size is 1
         else if(size == 1) {
             if(cmp(current->data, o) > 0) {
                 // if current > o
@@ -106,8 +106,7 @@ int insertInOrder(void* o, List* list) {
                     insertAtHead(list, o);
                     printList(list);
                     break;
-                }
-                else if((cmp(o, p->data) > 0) && (cmp(o, q->data) < 0)) {
+                } else if((cmp(o, p->data) > 0) && (cmp(o, q->data) < 0)) {
                     printf("Inserting [%d] in between [%d] and [%d].\n", (int) o, (int) p->data, (int) q->data);
                     eq = insertAfter(list, o, p->data);
                     printList(list);
@@ -145,12 +144,13 @@ int removeEq(void* o, List* list) {
                 temp = temp->next;
                 i++;
             }
-        } return 0;
+        }
+        return 0;
     }
 }
 
 int cmp(int a, int b) {
-    return a-b;
+    return a - b;
 }
 
 /*int cmp(void* o1, void* o2){
@@ -159,7 +159,7 @@ int cmp(int a, int b) {
     return(*a - *b);
 }*/
 
-int listContains(List *list, void *object) {
+int listContains(List* list, void* object) {
     Node* temp = list->head;
     for(int i = 0; i < getSize(list); i++) {
         if(temp->data == object) {
@@ -170,7 +170,7 @@ int listContains(List *list, void *object) {
     return 0;
 }
 
-void removeNodeAtIndex(List *list, int index) {
+void removeNodeAtIndex(List* list, int index) {
     if(index > 0) {
         //remove a node in middle of the list
         Node* p = getAtIndex(list, index);
@@ -186,16 +186,16 @@ void removeNodeAtIndex(List *list, int index) {
         list->size--;
         free(p);
     } else {
-            //remove head.
-            Node* p = getAtIndex(list, 0);
-            list->head = list->head->next;
-            list->size--;
-            free(p);
+        //remove head.
+        Node* p = getAtIndex(list, 0);
+        list->head = list->head->next;
+        list->size--;
+        free(p);
     }
 }
 
 
-int insertAfter(List *list, void *object, void* sentinel) {
+int insertAfter(List* list, void* object, void* sentinel) {
     if(!listContains(list, sentinel)) {
         //if sentinel does not exist
         if(getSize(list) > 0) {
