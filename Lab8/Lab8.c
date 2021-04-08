@@ -77,7 +77,7 @@ int insertInOrder(void* o, List* list) {
         }
             // list does not contain the object
             // bubble up to the position that it needs to insert at.
-            // insert there
+            // insert there\
 
             // if size is 1
         else if(size == 1) {

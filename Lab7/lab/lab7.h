@@ -21,10 +21,7 @@ typedef struct {
 
 void printList(List* list);
 
-List* initList();
-int getSize(List *list);
-void freeList(List *list);
-void* getAtIndex(List *list, int index);
+    
 
 #define SECT_B
 int insertAfter(List *list, void *object, void *sentinel);
