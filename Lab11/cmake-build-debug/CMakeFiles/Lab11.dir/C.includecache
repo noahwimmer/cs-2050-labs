@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/noahwimmer/Desktop/Freshman Year/Second Semester/CS2050/cs-2050-labs/Lab11/lab11.c
+lab11.h
+/Users/noahwimmer/Desktop/Freshman Year/Second Semester/CS2050/cs-2050-labs/Lab11/lab11.h
+
+/Users/noahwimmer/Desktop/Freshman Year/Second Semester/CS2050/cs-2050-labs/Lab11/lab11.h
+stdio.h
+-
+stdlib.h
+-
+

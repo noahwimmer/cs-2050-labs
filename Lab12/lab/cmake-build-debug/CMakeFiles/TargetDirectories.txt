@@ -1,0 +1,3 @@
+/Users/noahwimmer/Desktop/Freshman Year/Second Semester/CS2050/cs-2050-labs/Lab12/lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/noahwimmer/Desktop/Freshman Year/Second Semester/CS2050/cs-2050-labs/Lab12/lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/noahwimmer/Desktop/Freshman Year/Second Semester/CS2050/cs-2050-labs/Lab12/lab/cmake-build-debug/CMakeFiles/lab.dir
